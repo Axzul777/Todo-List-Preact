@@ -47,19 +47,15 @@ textarea.text-entry {
   max-height: 8rem;
   overflow: auto;
 }
+textarea:focus {
+  outline: none;
+}
 
 input:focus,
 .text-enty {
   outline: none;
 }
 
-input[type='checkbox'] {
-  display: none;
-}
-input[type='checkbox']:checked + label {
-  text-decoration: line-through;
-  font-style: italic;
-}
 
 .btn-del {
   width: 5rem;
@@ -102,33 +98,12 @@ hr {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   /* justify-content: center; */
   align-items: center;
 }
 
-.task-item {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-}
-
-.task-item > label {
-  grid-column-start: 1;
-  grid-column-end: 3; 
-}
- 
-.task-item > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 5rem;
-}
-.task-item > div > button {
-  grid-column-start: auto;
-  grid-column-end: auto;
-} 
 
 label {
   font-family: 'Courier New', Courier, monospace;

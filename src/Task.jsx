@@ -1,3 +1,4 @@
+import './Task.css';
 import { Component } from 'preact';
 
 class Task extends Component {
@@ -6,7 +7,7 @@ class Task extends Component {
       <>
         <div class="task-item">
           <input type="checkbox" id="checker" />
-          <label for="checker" class="todo">
+          <label for="checker">
             {props.text}
           </label>
           <div>
