@@ -4,12 +4,15 @@ class Task extends Component {
   render(props, state) {
     return (
       <>
-        <div class="task">
+        <div class="task-item">
           <input type="checkbox" id="checker" />
           <label for="checker" class="todo">
             {props.text}
           </label>
-          <button class="btn-del">Delete</button>
+          <div>
+             <button class="btn-del">Delete</button>
+             <button class="btn-edit">Edit</button>
+          </div>
         </div>
       </>
     );
