@@ -114,3 +114,36 @@ label {
   word-wrap: break-word;
   cursor: pointer;
 }
+
+
+/* TaskItem */
+.task-item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.task-item > label {
+  grid-column-start: 1;
+  grid-column-end: 3; 
+}
+ 
+.task-item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 5rem;
+}
+.task-item > div > button {
+  grid-column-start: auto;
+  grid-column-end: auto;
+} 
+
+input[type='checkbox'] {
+  display: none;
+}
+input[type='checkbox']:checked + label {
+  text-decoration: line-through;
+  font-style: italic;
+}
